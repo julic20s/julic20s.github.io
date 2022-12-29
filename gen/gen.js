@@ -1,5 +1,5 @@
 import { renderToStaticNodeStream } from 'react-dom/server';
-import { createWriteStream, mkdir, mkdirSync } from 'fs';
+import { createWriteStream, mkdirSync } from 'fs';
 
 mkdirSync("build");
 let stream = renderToStaticNodeStream(<div>Hello world!</div>);
