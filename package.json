@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "gen": "node gen/run.js"
+    "gen": "node run.js"
   },
   "repository": {
     "type": "git",
