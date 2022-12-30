@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "gen": "babel-node build.js"
+    "gen": "babel-node build.js & npx tailwindcss -i styles/tailwind.css -o build/tailwind.css"
   },
   "repository": {
     "type": "git",

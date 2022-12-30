@@ -16,6 +16,7 @@ function generateHtml(dir, output) {
                 let element = module.default();
                 let stream = renderToStaticNodeStream(element);
                 let out = createWriteStream(output + '/' + file.replace(".js", ""));
+                out.write('<!DOCTYPE html>');
                 stream.pipe(out);
             }
         });
