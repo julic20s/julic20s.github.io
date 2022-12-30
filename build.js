@@ -1,6 +1,5 @@
 import { renderToStaticNodeStream } from 'react-dom/server';
 import { createWriteStream, existsSync, mkdirSync, readdir, statSync } from 'fs';
-import { join, resolve } from 'path';
 
 const reg = /.*\.html\.js$/;
 function generateHtml(dir, output) {
@@ -21,9 +20,6 @@ function generateHtml(dir, output) {
             }
         });
     });
-
-    
-
 }
 
 generateHtml('./app', './build');
